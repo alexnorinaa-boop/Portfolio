@@ -9,6 +9,109 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- 01 · Cabeçalho -->
+    <header>
+        <div class="logo">Alexnorina.dev</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button id="btn-tema">Mudar Tema</button>
+    </header>
+
+    <main>
+        <!-- 02 · Início -->
+       <section id="inicio" class="hero">
+            <h1>Alexnorina Espirito Santo Adão</h1>
+            <h2>Desenvolvedora Front-End em Formação</h2>
+            <p>Estudante de Desenvolvimento de Sistemas no SENAI, dedicada a construir aplicações web eficientes, responsivas e focadas na experiência do utilizador.</p>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </section>
+
+        <!-- 03 · Sobre mim -->
+        <section id="sobre" class="sobre">
+            <h2>Sobre mim</h2>
+            <div class="sobre-conteudo">
+                <!-- Coloca a tua foto na pasta img com o nome perfil.jpg -->
+                <img src="1044950366.jpeg" alt="Foto de perfil de Alexnorina Espirito Santo Adão" />
+                <p>Sou estudante do curso técnico de <strong>Desenvolvimento de Sistemas no SENAI</strong>. Sou apaixonada por tecnologia e estou a construir o meu caminho na área de desenvolvimento web, criando interfaces limpas e funcionais.</p>
+            </div>
+        </section>
+
+        <!-- 04 · Habilidades -->
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades</h2>
+            <div class="cards-container">
+                <div class="card card-hab">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Ícone HTML5">
+                    <h3>HTML5 Semântico</h3>
+                </div>
+                <div class="card card-hab">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Ícone CSS3">
+                    <h3>CSS3 & Flexbox</h3>
+                </div>
+                <div class="card card-hab">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Ícone JavaScript">
+                    <h3>JavaScript DOM</h3>
+                </div>
+                <div class="card card-hab">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Ícone Git">
+                    <h3>Git & GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 · Projetos -->
+        <section id="projetos" class="projetos">
+            <h2>Projetos</h2>
+            <div class="cards-container">
+                <div class="card card-projeto">
+                    <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=400&auto=format&fit=crop&q=80" alt="Projeto AgroLog">
+                    <h3>AgroLog</h3>
+                    <p>Projeto colaborativo desenvolvido durante o curso no SENAI.</p>
+                    <span class="tag">Em andamento</span>
+                </div>
+                <div class="card card-projeto">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop&q=80" alt="Página de Portfólio">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site estruturado com HTML5 semântico, CSS3 e JavaScript.</p>
+                    <span class="tag">Concluído</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 · Contato -->
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p class="intro-contato">Estudante de Desenvolvimento de Sistemas no <strong>SENAI</strong>. Entre em contacto através dos dados abaixo ou envie uma mensagem:</p>
+            
+            <div class="info-contato">
+                <p>📞 <strong>Telefone:</strong> <a href="tel:64992877328">(64) 99287-7328</a></p>
+                <p>📧 <strong>E-mail:</strong> <a href="mailto:alexnorinaa@gmail.com">alexnorinaa@gmail.com</a></p>
+            </div>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 07 · Rodapé -->
+    <footer>
+        <p>&copy; 2026 Alexnorina Espirito Santo Adão. Desenvolvido no SENAI.</p>
+    </footer>
     
 </body>
 </html>
